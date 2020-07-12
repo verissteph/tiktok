@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>tik tok</title>
+    </head>
+    <body>
+        <table class="table">
+       <h1> Dados do Funcionario:</h1>
+                <tr>
+                    <th>Nome:</th>
+                    <td>{{ funcionario.nome }}</td>
+                </tr>
+                <tr>
+                    <th>Data de Nascimento:</th>
+                    <td>{{ funcionario.dataDeNascimento|date("d-m-Y") }}</td>
+                </tr>
+                <tr>
+                    <th>Data de Entrada:</th>
+                    <td>{{ funcionario.dataDeEntrada|date("d-m-Y") }}</td>
+                </tr>
+                <tr>
+                    <th>Tempo de Empresa:</th>
+                    <td>{{ funcionario.tempoNaEmpresa|date("%Y anos, %m meses e %d dias") }}</td>
+                </tr>
+        </table>
+    </body>
+</html>
